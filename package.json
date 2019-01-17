@@ -17,10 +17,12 @@
   "license": "MIT",
   "dependencies": {
     "csvtojson": "^1.1.9",
+    "latest-tweets": "^1.0.4",
     "ml-knn": "^2.0.0",
     "ml-regression": "^4.2.1",
     "prompt": "^1.0.0",
     "sentiment": "^5.0.1",
-    "twit": "^2.2.11"
+    "twit": "^2.2.11",
+    "twitter": "^1.7.1"
   }
 }
