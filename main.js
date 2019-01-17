@@ -1,16 +1,28 @@
-var senti = require('Senti');
-var Twitter = require('./Filters/Account_Filter')
+var senti = require('./Senti');
+var Twitter_Filter = require('./Filters/Account_Filter');
+var account;
+
+    //Use readline for Terminal input
+    const readline = require('readline').createInterface({
+        input: process.stdin,
+        output: process.stdout
+    });
 
 
-function main(){
-    console.log("Type in Account name");
+    readline.question("Type in Twitter Account name: \n", (name) => {
+        account = name;
+        readline.close();
+        console.log("Worked " + account);
+        Twitter_Filter(account);
+    });
 
-    senti.senti_analyze("hello");
 
 
 
 
-}
+
+
+
 
 
 

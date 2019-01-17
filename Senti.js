@@ -1,22 +1,21 @@
 //our basic sentiment-analyzer
-var Senti = require('Senti');
+var sentiment = require('sentiment');
 
 
 //function retrieves sentiment-score
-export function senti_analyze(sentence) {
-    var sentiment = new Senti();
+module.exports = function senti_analyze(sentence) {
+    var sentiment = new sentiment();
     var result = sentiment.analyze(sentence);
     console.log(result.score);
 
     return result
-}
+};
 
 
 //calculates total score
-export function score(tweet){
+module.exports = function score(tweet){
     let total;
     total = total + senti_analyze(tweet);
 
     return total
-
-}
+};
