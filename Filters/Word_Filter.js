@@ -5,7 +5,7 @@ var login_data = require('./Twitter_Login');
 var Twit = require('twit');
 
 
-//New Bot
+//New Bot using Twitter credentials from Twitter_Login.js
 const Bot = new Twit({
     consumer_key: login_data.TWITTER_CONSUMER_KEY,
     consumer_secret: login_data.TWITTER_CONSUMER_SECRET,

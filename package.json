@@ -2,7 +2,7 @@
   "name": "getting-started-with-ml-using-js",
   "version": "1.0.0",
   "description": "Machine Learning with JavaScript. Fast and Simple.",
-  "main": "index.js",
+  "Filters": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,11 +18,8 @@
   "dependencies": {
     "csvtojson": "^1.1.9",
     "latest-tweets": "^1.0.4",
-    "ml-knn": "^2.0.0",
-    "ml-regression": "^4.2.1",
     "prompt": "^1.0.0",
     "sentiment": "^5.0.1",
-    "twit": "^2.2.11",
-    "twitter": "^1.7.1"
+    "twit": "^2.2.11"
   }
 }
