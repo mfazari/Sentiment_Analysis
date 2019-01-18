@@ -13,18 +13,18 @@
 --> Et voilà, you're getting a score based on our algorithm and the last 100 tweets
 
 
-##Author
+## Author
 
 * **Massimo Fazari, 2019** 
 
 
-##License
+## License
 
 This project is licensed under the MIT License
 
 
 
-##Acknowledgments
+## Acknowledgments
 It wouldn't have been possible to create this without having had a great preconfigured library (namely Sentiment).
 
 
