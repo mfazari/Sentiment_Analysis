@@ -1,6 +1,6 @@
-var senti = require('./Senti');
 var Twitter_Filter = require('./Filters/Account_Filter');
 var account;
+
 
     //Use readline for Terminal input
     const readline = require('readline').createInterface({

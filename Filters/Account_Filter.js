@@ -1,5 +1,6 @@
 var login_data = require('./Twitter_Login');
 var Twit = require('twit');
+var senti = require('./Senti');
 
 module.exports = function filter(account_name) {
 //New Bot using Twitter credentials from Twitter_Login.js
@@ -18,8 +19,12 @@ module.exports = function filter(account_name) {
 
     Bot.get('statuses/user_timeline', options, function (err, data) {
         for (var i = 0; i < data.length; i++) {
+            var sentences = data[i].toArrayString;
             console.log(data[i].text);
         }
+        //sends Array with tweets to our Sentiment Analyzer
+        var score = senti(sentences);
+        console.log(score);
     });
 
 
