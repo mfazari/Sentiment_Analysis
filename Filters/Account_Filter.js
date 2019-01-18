@@ -13,14 +13,14 @@ module.exports = function filter(account_name) {
 
     const options = {
         screen_name: account_name,
-        count: 3
+        count: 100      //Considers the last 100 tweets for analysis
     };
 
 
     Bot.get('statuses/user_timeline', options, function (err, data) {
-        for (var i = 0; i < data.length; i++) {
-            var sentences = data[i].toArrayString;
-            console.log(data[i].text);
+        var sentences = [];
+        for (let i = 0; i < data.length; i++) {
+            sentences[i] = "" + data[i].text;
         }
         //sends Array with tweets to our Sentiment Analyzer
         var score = senti(sentences);
